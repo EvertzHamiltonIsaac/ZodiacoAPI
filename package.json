@@ -1,0 +1,25 @@
+{
+  "name": "api-zodiaco",
+  "version": "1.0.0",
+  "description": "proyecto para practicar backend con ts.",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "set NODE_ENV=development & nodemon ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:compile": "npx tsc"
+  },
+  "author": "Evertz Hamilton",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.3",
+    "nodemon": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.5",
+    "typescript": "^5.6.2"
+  }
+}
