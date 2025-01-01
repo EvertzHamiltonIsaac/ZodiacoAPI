@@ -16,14 +16,6 @@ const ElementsSchema = new mongoose_1.default.Schema({
     img: {
         type: String,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now(),
-    },
-    updatedAt: {
-        type: Date,
-        default: Date.now(),
-    },
 });
-const ElementModel = mongoose_1.default.model('Element', ElementsSchema);
+const ElementModel = mongoose_1.default.model('Elements', ElementsSchema);
 exports.default = ElementModel;

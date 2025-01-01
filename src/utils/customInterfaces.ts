@@ -1,25 +1,38 @@
 export interface IGenericAtributesForCollections {
   name: string;
-  descripcion: string;
+  description: string;
   img?: string;
-  createdAt: Date;
-  updatedAt: Date;
 }
 
 //* Interface de la collection PositiveTraits
-export interface IPositiveTraits extends IGenericAtributesForCollections {}
+export interface IPositiveTraits extends IGenericAtributesForCollections {
+  category: string;
+  is_negative: boolean;
+}
 //* Interface de la collection NegativeTraits
-export interface INegativeTraits extends IGenericAtributesForCollections {}
+export interface INegativeTraits extends IGenericAtributesForCollections {
+  category: string;
+  is_negative: boolean;
+}
 //* Interface de la collection Animal
 export interface IAnimal extends IGenericAtributesForCollections {}
 //* Interface de la collection Stone
 export interface IStone extends IGenericAtributesForCollections {}
 //* Interface de la collection RulingPlanet
-export interface IRulingPlanet extends IGenericAtributesForCollections {}
+export interface IRulingPlanet extends IGenericAtributesForCollections {
+  day_of_week?: string;
+  orbit_period?: string;
+  mythology?: string;
+}
 //* Interface de la collection Modality
-export interface IModality extends IGenericAtributesForCollections {}
+export interface IModality extends IGenericAtributesForCollections {
+  characteristics: string[];
+}
+
 //* Interface de la collection Element
-export interface IElement extends IGenericAtributesForCollections {}
+export interface IElement extends IGenericAtributesForCollections {
+  colors: string[];
+}
 
 export interface ISignsModel {
   name: string;

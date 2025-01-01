@@ -11,7 +11,7 @@ export const CreateElement = async (req: Request, res: Response) => {
 
     res.status(200).json({
       status: 'succesfull!!!',
-      newElement: body,
+      newElement: newElement,
     });
   } catch (error) {
     res.status(400).json({
